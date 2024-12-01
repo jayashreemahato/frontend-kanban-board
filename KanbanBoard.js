@@ -4,6 +4,24 @@ import TicketCard from './TicketCard';
 import './KanbanBoard.css';
 
 const KanbanBoard = () => {
+  const groupingIcons = {
+    status: '/icons_FEtask/Display.svg',
+    user: '/icons_FEtask/add.svg',
+    priority: '/icons_FEtask/SVG - Urgent Priority colour/.svg',
+  };
+
+  return (
+    <header>
+      <img src={groupingIcons[groupBy]} alt={groupBy} className="grouping-icon" />
+      <select onChange={(e) => setGroupBy(e.target.value)}>
+        <option value="status">Group by Status</option>
+        <option value="user">Group by User</option>
+        <option value="priority">Group by Priority</option>
+      </select>
+    </header>
+  );
+};
+
   const [tickets, setTickets] = useState([]);
   const [groupBy, setGroupBy] = useState('status');
   const [sortBy, setSortBy] = useState('priority');
