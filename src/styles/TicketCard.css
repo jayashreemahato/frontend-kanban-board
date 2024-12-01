@@ -1,0 +1,28 @@
+.ticket-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.priority-4 {
+  background-color: #ffcccc; /* Urgent */
+}
+
+.priority-3 {
+  background-color: #ffd966; /* High */
+}
+
+.priority-2 {
+  background-color: #ffffb3; /* Medium */
+}
+
+.priority-1 {
+  background-color: #d9f2d9; /* Low */
+}
+
+.priority-0 {
+  background-color: #f2f2f2; /* No Priority */
+}
