@@ -12,6 +12,12 @@ header {
   margin-bottom: 1rem;
 }
 
+.grouping-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
 .kanban-column {
   border: 1px solid #ccc;
   border-radius: 8px;
